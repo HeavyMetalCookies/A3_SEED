@@ -43,7 +43,7 @@
 
            Feel free to change library prefix.
            I went with this because it is easy to see
-           that it is my library code and tell wether it
+           that it is my library code and tell whether it
            is function or data with a quick glance.
 
            1. A3F_ (public  function)
