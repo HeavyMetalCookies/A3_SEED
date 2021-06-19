@@ -1,6 +1,6 @@
     //:ABOUT_A3_SEED:========================================://
 
-        A3C is Data Oriented Design template for new C 
+        A3 is Data Oriented Design template for new C 
         projects. It is based on lessons learned from my
         AAC2020 library code. 
 
