@@ -1,0 +1,66 @@
+
+//:LC: Library Chain (Known As: LIBCHAN in AAC2020)
+//:    @I[ 0318 ]T[ 02:17:17 ]FILE_EXPLAINED
+    
+//:STANDARD_LIBS:============================================://
+
+    #include <stdio.h>  //:for: printf(...)
+    #include <stdlib.h> //: exit()
+
+//:============================================:STANDARD_LIBS://
+//:INCLUDE_CODE_USING_MASTER_LIST:===========================://
+#define a3d_ini ( 0 )
+#define a3d_utm ( 0 )
+
+    //:3RD_PARTY:--------------------------------------------://
+
+        /** LODEPNG: Loads and saves PNG FILES               **/
+        /** PEB2020: Gets [LoadLibrary] and [GetProcAddress] **/
+
+        #include "../../DEP/LODEPNG._"
+        #include "../../DEP/PEB2020/PEB2020.H" 
+                                             
+    //:--------------------------------------------:3RD_PARTY://
+    //:INCLUDE_ALL_DATA:-------------------------------------://
+
+        #define a3d_dat ( 1 ) 
+        #define a3d_fun ( 0 )
+        #define a3d_tes ( 0 )
+      
+            #include "./LIS._" 
+
+        #undef  a3d_dat
+        #undef  a3d_fun
+        #undef  a3d_tes
+
+    //:-------------------------------------:INCLUDE_ALL_DATA://
+    //:INCLUDE_ALL_FUNCTIONS:--------------------------------://
+
+        #define a3d_dat ( 0 ) 
+        #define a3d_fun ( 1 )
+        #define a3d_tes ( 0 )
+
+            #include "./LIS._" 
+
+        #undef  a3d_dat
+        #undef  a3d_fun
+        #undef  a3d_tes
+
+    //:--------------------------------:INCLUDE_ALL_FUNCTIONS://
+    //:INCLUDE_ALL_TESTS:------------------------------------://
+
+        #define a3d_dat ( 0 ) 
+        #define a3d_fun ( 0 )
+        #define a3d_tes ( 1 )
+
+            #include "./LIS._" 
+
+        #undef  a3d_dat
+        #undef  a3d_fun
+        #undef  a3d_tes
+
+    //:------------------------------------:INCLUDE_ALL_TESTS://
+
+#undef  a3d_ini 
+#undef  a3d_utm 
+//:===========================:INCLUDE_CODE_USING_MASTER_LIST://

@@ -1,0 +1,25 @@
+//:INCLUDE_SOURCES:==========================================://
+    #if( a3d_dat == 1 )
+        #include "./001/NATIWIN/NW.D._"
+    #endif
+    #if( a3d_fun == 1 )
+        #include "./001/NATIWIN/NW.F._"
+    #endif
+    #if( a3d_tes == 1 )
+        #include "./001/NATIWIN/NW.T._"
+    #endif
+//:==========================================:INCLUDE_SOURCES://
+//:INVOKE_SOURCES:===========================================://
+    #if( a3d_ini == 1 )
+        A3F_NATIWIN_INI();
+    #endif
+    #if( a3d_utm == 1 )
+        A3F_NATIWIN_UTM();
+    #endif
+//:===========================================:INVOKE_SOURCES://
+//:ERROR_CHECK_SELECTION:====================================://
+    //:@I[ 0319 ]T[ 02:42:00 ]
+    #if( (a3d_dat+a3d_fun+a3d_tes+a3d_ini+a3d_utm) != 1 )
+        #error [ONLY_ONE_FLAG_SHOULD_BE_SET:NATIWIN]
+    #endif
+//:====================================:ERROR_CHECK_SELECTION://

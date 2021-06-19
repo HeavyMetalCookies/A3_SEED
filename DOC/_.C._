@@ -1,0 +1,28 @@
+/** ******************************************************** ***
+//#_______CHRONOLOGICAL_NOTES_NEWEST_GO_AT_TOP_OF_FILE_______#//
+
+
+//:LODEPNG_HACKING:==========================================://
+
+    Stuff cut out of lodepng:
+
+        REMOVE FROM LODEPNG: 
+            __cplusplus
+            LODEPNG_NO_COMPILE_CPP
+            LODEPNG_COMPILE_CPP
+
+//:==========================================:LODEPNG_HACKING://
+//:FAKE_PROJECT_TREE:========================================://
+TAGS[ #FPT# | #_FPT_# ]
+
+    FPT : 
+        Fake Project Tree.
+        For navigating the code base in a way different
+        from it's actual organization. A way to find
+        things if you need them.
+    
+        Not sure I am going to use this or not.
+
+//:========================================:FAKE_PROJECT_TREE://
+//#_______CHRONOLOGICAL_NOTES_NEWEST_GO_AT_TOP_OF_FILE_______#//
+*** ******************************************************** **/

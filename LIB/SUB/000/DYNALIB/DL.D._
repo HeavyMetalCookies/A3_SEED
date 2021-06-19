@@ -1,0 +1,5 @@
+//:DYNALIB.D._
+    
+    //:@I[0319]T[00:40:42]EXPLAINED:"_fun" & "_dll"
+    typedef void ( __stdcall A3D_DYNALIB_fun)( /**NOTSPEC**/ );     
+    #define                  A3D_DYNALIB_dll  void        

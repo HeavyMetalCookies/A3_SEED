@@ -1,0 +1,38 @@
+//:DYNALIB.F._
+
+#include "../../../../LIB/E_E/MAC/INT/TOP._" 
+#include "../../../../LIB/E_E/MAC/CHR/TOP._"
+
+//:INIT:=====================================================://
+    void A3F_DYNALIB_INI( void ){
+        //:NO_INIT_CODE_NEEDED
+    }
+//:=====================================================:INIT://
+//:LOAD_LIBRARY:=============================================://
+
+    A3D_DYNALIB_dll*
+    A3F_DYNALIB_GET_dll(
+        CHR* dll_nam
+    ){
+        PEB2020_DLIB dll_han ;
+        dll_han = PEB2020_LoadLibraryA( dll_nam );
+        return( (A3D_DYNALIB_dll*)dll_han );
+    }
+
+//:=============================================:LOAD_LIBRARY://
+//:GET_PROC_ADDRESS:=========================================://
+
+    A3D_DYNALIB_fun*
+    A3F_DYNALIB_GET_fun( 
+        void* dll_han 
+    ,   CHR*  fun_nam
+    ){
+        PEB2020_FUNC dll_fun=(
+        PEB2020_GetProcAddress( dll_han, fun_nam ));;
+        return( (A3D_DYNALIB_fun*)dll_fun );
+    }
+
+//:=========================================:GET_PROC_ADDRESS://
+
+#include "../../../../LIB/E_E/MAC/INT/BOT._" 
+#include "../../../../LIB/E_E/MAC/CHR/BOT._"

@@ -1,0 +1,16 @@
+//:MAIN_ENTRY_POINT:=========================================://
+//:@I[0319]T[02:55:23]EXPLAINED_MAIN_ENTRY_POINT
+
+    int A3F_LIBMAIN_MEP( void ){
+
+        printf("[A3F_LIBMAIN_MEP:BEG]\n");
+
+        A3F_LIBMAIN_INI();
+        A3F_LIBMAIN_UTM();
+
+        printf("[A3F_LIBMAIN_MEP:END]\n");
+
+        return( 0 );
+    }
+
+//:=========================================:MAIN_ENTRY_POINT://

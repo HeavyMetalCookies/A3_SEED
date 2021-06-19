@@ -1,0 +1,3 @@
+
+    #define CHR const char
+    #define NCC       char

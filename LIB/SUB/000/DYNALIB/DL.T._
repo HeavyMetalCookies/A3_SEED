@@ -1,0 +1,24 @@
+//:DYNALIB.T._
+
+//:UNIT_TEST_MAIN:===========================================://
+//:@I[0319]T[02:33:00]ROUGH_DRAFT_EXPLAINED
+
+    void A3F_DYNALIB_UTM( void ){
+
+        A3D_DYNALIB_dll* dll_han;
+        A3D_DYNALIB_fun* dll_fun;
+
+        dll_han = A3F_DYNALIB_GET_dll("user32.dll");
+        dll_fun=( A3F_DYNALIB_GET_fun( dll_han, "MessageBoxW"));
+
+        dll_fun(
+        /**/NULL
+        ,   L"It works!"
+        ,   L"Hello World!"
+        ,   MACRO_WINDOWS_xxx_MB_OK
+        );;
+
+        return;
+    }
+
+//:===========================================:UNIT_TEST_MAIN://

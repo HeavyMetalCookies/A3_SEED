@@ -1,0 +1,20 @@
+//:INITIALIZERS:=============================================://
+//:@I[0319]T[02:51:42]INI_FUNCTION_EXPLAINED
+
+    #define a3d_dat ( 0 )
+    #define a3d_fun ( 0 )
+    #define a3d_tes ( 0 )
+    #define a3d_ini ( 1 )
+    #define a3d_utm ( 0 )
+
+        void A3F_LIBMAIN_INI( void ){
+            #include "../../../LIB/E_E/LIBCHAN/LIS._"
+        }
+
+    #undef a3d_dat 
+    #undef a3d_fun 
+    #undef a3d_tes 
+    #undef a3d_ini 
+    #undef a3d_utm 
+
+//:=============================================:INITIALIZERS://

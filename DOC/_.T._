@@ -1,0 +1,88 @@
+//:##########################################################://
+//:                                                          ://
+//: Lets keep all this in ONE FILE. Even if this file get's  ://
+//: huge because it makes it easier to search for things.    ://
+//:                                                          ://
+//: N: Top Level Namespaces                                  ://
+//: L: Namespaces, Libraries                                 ://
+//: V: Variable Names                                        ://
+//: F: Function Names                                        ://
+//: T: Transform Abbreviations                               ://
+//: A: All other Abbreviations                               ://
+//: E: Error Message Abbreviations                           ://
+//: M: Macros                                                ://
+//:                                                          ://
+//:##########################################################://
+
+//:NAMESPACES:TOPLEVEL:======================================://
+
+    AAC2020   : Previous Projects Top Level Namespace(s).
+    A3D & A3F : Current  Projects Top Level Namespace(s).
+
+    A3D       : AtomicAlice3 Library, DATA ( PUBLIC)
+    A3F       : AtomicAlice3 Library, FUNC ( PUBLIC)
+
+    a3d       : AtomicAlice3 Library, DATA (private)
+    a3f       : AtomicAlice3 Library, FUNC (private)
+
+    //: - - - - - - - - - - - - ---- - - - - - - - - - - - - ://
+
+    libchan   : Library Chain                 (public|private)
+    libmain   : Top Level Sub Library Coupler (public|private)
+
+//:======================================:NAMESPACES:TOPLEVEL://
+//:NAMESPACES:LIBRARIES:=====================================://
+
+    
+    fileboi : Basic File System Access        (public|private)
+    
+
+//:=====================================:NAMESPACES:LIBRARIES://
+//:VARIABLES:================================================://
+
+    dep     : dependency
+    pfn     : USE[ fun ]( pfn == pointer to function )
+    fun     : function
+
+    dll_nam : DLL Name. INCLUDE EXTENSION. Ex:"kernel32.dll"
+    dll_han : DLL Handle (could be pointer, but not up to you.)
+    fun_nam : Function Name
+    fun_dll : Function (from DLL)
+
+//:================================================:VARIABLES://
+//:FUNCTIONS:================================================://
+
+    MEP : Main Entry Point
+    UTM : Unit_Test_Main (Main Entry Point For Unit Test)
+
+//:================================================:FUNCTIONS://
+//:TRANSFORM_FUNCTION_ABBREV:================================://
+
+    CTO : Convert To
+    LUT : Look_Up_Table
+ 
+//:================================:TRANSFORM_FUNCTION_ABBREV://
+//:ALL_OTHER_ABBREVIATIONS:==================================://
+
+    TES     : Test (NOT FUNCTION. SEE[ UTM ](UnitTestMain))
+    INI     : Initialize
+    NOTSPEC : Not Specified (NOT THE SAME AS VOID)
+
+//:==================================:ALL_OTHER_ABBREVIATIONS://
+//:MACROS:===================================================://
+
+    a3d_fun : #ifdef( a3d_fun ), to include .F files
+    a3d_dat : #ifdef( a3d_dat ), to include .D files
+    a3d_tes : #ifdef( a3d_tes ), to include .T files
+
+    a3d_ini : #ifdef( a3d_ini ), to include *_INI() calls.
+    a3d_utm : #ifdef( a3d_utm ), to include *_UTM() calls.
+
+//:===================================================:MACROS://
+//:ITS_WRONG:================================================://
+
+    han_dll >>> dll_han
+    nam_fun >>> fun_nam
+    dll_fun >>> fun_dll
+
+//:================================================:ITS_WRONG://

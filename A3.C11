@@ -1,0 +1,29 @@
+/** ******************************************************** ***
+    Books to understand Graphics Fundamentals:
+        Ray tracing in one weekend
+        Physically Based Rendering book
+*** ******************************************************** **/
+//:SELECT_LIBS_BY_DEPENDENCY_GROUP:==========================://
+
+    #define A3D_dep_000 ( 1 ) //:Use_Dependencies: 0 degree
+    #define A3D_dep_001 ( 1 ) //:Use_Dependencies: 1 degree  
+    #define A3D_dep_002 ( 1 ) //:Use_Dependencies: 2 degree
+
+//:==========================:SELECT_LIBS_BY_DEPENDENCY_GROUP://
+//:FAUX_BUILD_SYSTEM:========================================://
+
+    #include "./LIB/E_E/LIBCHAN/L_C._" //:FAUX_BUILD_SYSTEM
+    #include "./LIB/E_E/LIBMAIN/L_M._" //:SYSTEM____COUPLER
+
+//:========================================:FAUX_BUILD_SYSTEM://
+//:WRAPPER_FOR_MAIN_ENTRY_POINT:=============================://
+
+    int 
+    main( void ){
+        int res = A3F_LIBMAIN_MEP();
+        return( res );
+    }  
+
+//:=============================:WRAPPER_FOR_MAIN_ENTRY_POINT://
+
+    
