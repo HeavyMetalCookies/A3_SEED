@@ -1,0 +1,4 @@
+
+    #define FUN A3D_FUN
+    #define VOD    void
+    #define CON   const

@@ -8,7 +8,8 @@
     #define a3d_utm ( 0 )
 
         void A3F_LIBMAIN_INI( void ){
-            #include "../../../LIB/E_E/LIBCHAN/LIS._"
+             A3F_ERR("[003]"); //:@I[0321]T[01:39:30]
+            //- #include "../../../LIB/E_E/LIBCHAN/LIS._"    -//
         }
 
     #undef a3d_dat 

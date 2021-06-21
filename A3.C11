@@ -3,15 +3,23 @@
         Ray tracing in one weekend
         Physically Based Rendering book
 *** ******************************************************** **/
-//:SELECT_LIBS_BY_DEPENDENCY_GROUP:==========================://
+
+//:CONFIG:===================================================://
+
+    //:SHOULD_WE_INVOKE_UNIT_TESTS: 
+
+    #define A3D_UTM ( 2 ) //:[ 1==OFF | 2==ON ]://
+
+    //:SELECT_LIBS_BY_DEPENDENCY_GROUP:
 
     #define A3D_dep_000 ( 1 ) //:Use_Dependencies: 0 degree
     #define A3D_dep_001 ( 1 ) //:Use_Dependencies: 1 degree  
     #define A3D_dep_002 ( 1 ) //:Use_Dependencies: 2 degree
 
-//:==========================:SELECT_LIBS_BY_DEPENDENCY_GROUP://
+//:===================================================:CONFIG://
 //:FAUX_BUILD_SYSTEM:========================================://
 
+    #include "./LIB/E_E/LIBDEBU/L_D._" //:LIBRARY_SETUP_DEBUG
     #include "./LIB/E_E/LIBCHAN/L_C._" //:FAUX_BUILD_SYSTEM
     #include "./LIB/E_E/LIBMAIN/L_M._" //:SYSTEM____COUPLER
 

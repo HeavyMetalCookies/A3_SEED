@@ -1,0 +1,4 @@
+//:Highest level types for "A3" library. Can be used by
+//:any sub-library and LIBMAIN. @I[0321]T[00:21:50]
+
+    typedef void (__stdcall A3D_FUN)(void);  //:@A3D_TYP_FUN@://

@@ -7,8 +7,12 @@
     #define a3d_utm ( 1 )
 
         //:@I[ 0319 ]T[ 03:08:08 ]SOLVE_RECURSION_PROBLEM
+        //:@I[ 0320 ]T[ 01:14:14 ]DO_NOT_USE_THIS_FUNCTION
         void A3F_LIBMAIN_UTM( void ){
-            #include "../../../LIB/E_E/LIBCHAN/LIS._"
+
+            A3F_ERR("[002]");
+            //- #include "../../../LIB/E_E/LIBCHAN/LIS._"    -//
+
         }
 
     #undef a3d_dat 

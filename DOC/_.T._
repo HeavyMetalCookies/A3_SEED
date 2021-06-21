@@ -27,19 +27,21 @@
 
     //: - - - - - - - - - - - - ---- - - - - - - - - - - - - ://
 
-    libchan   : Library Chain                 (public|private)
-    libmain   : Top Level Sub Library Coupler (public|private)
+    LIBCHAN   : Library Chain                 (public|private)
+    LIBMAIN   : Top Level Sub Library Coupler (public|private)
 
 //:======================================:NAMESPACES:TOPLEVEL://
 //:NAMESPACES:LIBRARIES:=====================================://
 
-    
-    fileboi : Basic File System Access        (public|private)
-    
+    DYNALIB : DLL LoadLibrary And GetProcAddress Wrappers.
+    FILEBOI : Basic File System Access        (public|private)
+    NATIWIN : Native Window Code
+    VULKLIB : Vulkan Library
 
 //:=====================================:NAMESPACES:LIBRARIES://
 //:VARIABLES:================================================://
 
+    e_m     : error_message
     dep     : dependency
     pfn     : USE[ fun ]( pfn == pointer to function )
     fun     : function
@@ -54,6 +56,8 @@
 
     MEP : Main Entry Point
     UTM : Unit_Test_Main (Main Entry Point For Unit Test)
+    INI : Initialize
+    IIT : Interlaced_Init__and__Test
 
 //:================================================:FUNCTIONS://
 //:TRANSFORM_FUNCTION_ABBREV:================================://
@@ -65,9 +69,10 @@
 //:ALL_OTHER_ABBREVIATIONS:==================================://
 
     TES     : Test (NOT FUNCTION. SEE[ UTM ](UnitTestMain))
-    INI     : Initialize
+    IAT     : Internally_Auto_Tiled
     NOTSPEC : Not Specified (NOT THE SAME AS VOID)
-
+    FILESEC : FILE SECTION. Tells us what file we are in.
+    
 //:==================================:ALL_OTHER_ABBREVIATIONS://
 //:MACROS:===================================================://
 
@@ -78,11 +83,16 @@
     a3d_ini : #ifdef( a3d_ini ), to include *_INI() calls.
     a3d_utm : #ifdef( a3d_utm ), to include *_UTM() calls.
 
+    A3D_UTM : If 1 , include unit tests. Else compile them out.
+
 //:===================================================:MACROS://
 //:ITS_WRONG:================================================://
 
     han_dll >>> dll_han
     nam_fun >>> fun_nam
     dll_fun >>> fun_dll
+    FILENAM >>> FILESEC
+    m_e     >>> e_m
+    A3F_UTM >>> A3D_UTM (All macros start with A3D , not A3F)
 
 //:================================================:ITS_WRONG://

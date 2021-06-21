@@ -1,7 +1,8 @@
 //:FILEBOI.FUNCTIONS:
 
-    void A3F_FILEBOI_INI( void ){
+    void      A3F_FILEBOI_INI( void ){
+    A3F_LOG("[A3F_FILEBOI_INI]");
 
-        //:Nothing here for now.
+        //:NOTHING_HERE_YET
 
     }

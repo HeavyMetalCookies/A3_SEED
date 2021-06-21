@@ -1,8 +1,19 @@
 //:FILEBOI.TESTS:
 
+//:NO_UNIT_TESTS:============================================://
+#if( 1 == A3D_UTM )
+    void A3F_FILEBOI_UTM( void ){ }
+#endif
+//:============================================:NO_UNIT_TESTS://
+//:FILEBOI_TESTS:============================================://
+#if( 2 == A3D_UTM )
 
-    void A3F_FILEBOI_UTM( void ){
+    void      A3F_FILEBOI_UTM( void ){
+    A3F_LOG("[A3F_FILEBOI_UTM]");
 
-        //:Do nothing for now.
+        //:Nothing Here Yet
 
     }
+
+#endif
+//:============================================:FILEBOI_TESTS://

@@ -1,0 +1,51 @@
+
+//:SHORTHAND_MACROS:=========================================://
+
+    #include "./LIB/E_E/MAC/CHR/TOP._"
+
+//:=========================================:SHORTHAND_MACROS://
+//:HALTING_FUNCTIONS:========================================://
+
+    void A3F_ERR( CHR* e_m ){
+
+        printf( "[A3F_ERR]:%s\n" , e_m );
+        fflush(stdout);
+        exit( 1 );
+    }
+
+    void A3F_ASS( int t_f , CHR* e_m ){
+
+        if( 1 == t_f ){
+
+            //:Do nothing. True.
+
+        }else
+        if( 0 == t_f ){
+            printf( "[A3F._]:%s\n" , e_m );
+            fflush(stdout);
+            exit( 2 );
+        }else{
+            printf( "[EXPECTED_0_OR_1_FOR:t_f]" );
+            printf( "[A3F._]:%s\n" , e_m );
+            fflush(stdout);
+            exit( 2 );
+        };;
+    
+    }
+
+//:========================================:HALTING_FUNCTIONS://
+//:LOGGING_FUNCTIONS:========================================://
+
+    void A3F_LOG( CHR* msg ){
+
+        printf( "[A3F_LOG]:%s\n" , msg );
+        fflush(stdout);
+        
+    }
+
+//:========================================:LOGGING_FUNCTIONS://
+//:SHORTHAND_MACROS:=========================================://
+
+    #include "./LIB/E_E/MAC/CHR/BOT._"
+
+//:=========================================:SHORTHAND_MACROS://

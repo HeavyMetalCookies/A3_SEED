@@ -1,12 +1,29 @@
 //:MAIN_ENTRY_POINT:=========================================://
 //:@I[0319]T[02:55:23]EXPLAINED_MAIN_ENTRY_POINT
 
+    void A3F_LIBMAIN_IIT( void ){
+        #define a3d_dat ( 0 )
+        #define a3d_fun ( 0 )
+        #define a3d_tes ( 0 )
+        #define a3d_ini ( 1 )
+        #define a3d_utm ( 1 )
+
+            #include "../../../LIB/E_E/LIBCHAN/LIS._"    
+   
+        #undef a3d_dat 
+        #undef a3d_fun 
+        #undef a3d_tes 
+        #undef a3d_ini 
+        #undef a3d_utm 
+    }
+
     int A3F_LIBMAIN_MEP( void ){
 
         printf("[A3F_LIBMAIN_MEP:BEG]\n");
 
-        A3F_LIBMAIN_INI();
-        A3F_LIBMAIN_UTM();
+        A3F_LIBMAIN_IIT();
+    //- A3F_LIBMAIN_INI(); <-- DONT DO THIS EITHER.          -//
+    //- A3F_LIBMAIN_UTM(); <-- Call From The Initializers.   -//
 
         printf("[A3F_LIBMAIN_MEP:END]\n");
 

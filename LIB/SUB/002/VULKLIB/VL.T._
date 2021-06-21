@@ -1,18 +1,16 @@
-//:NATIWIN.TEST:
+//:VULKLIB.TEST:
 //:NOT_TEST:=================================================://
 #if( 1 == A3D_UTM )
-    void A3F_NATIWIN_UTM( void ){ }
+    void      A3F_VULKLIB_UTM( void ){ }
 #endif
 //:=================================================:NOT_TEST://
 //:YES_TEST:=================================================://
 #if( 2 == A3D_UTM )
+    void      A3F_VULKLIB_UTM( void ){
+    A3F_LOG("[A3F_VULKLIB_UTM]");
 
-    void      A3F_NATIWIN_UTM( void ){
-    A3F_LOG("[A3F_NATIWIN_UTM]");
-
-        //:NOTHINGHEREYET
+        //:UnitTestCodeGoesHere
 
     }
-
 #endif
 //:=================================================:YES_TEST://

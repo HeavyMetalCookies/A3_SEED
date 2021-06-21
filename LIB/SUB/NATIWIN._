@@ -18,8 +18,8 @@
     #endif
 //:===========================================:INVOKE_SOURCES://
 //:ERROR_CHECK_SELECTION:====================================://
-    //:@I[ 0319 ]T[ 02:42:00 ]
-    #if( (a3d_dat+a3d_fun+a3d_tes+a3d_ini+a3d_utm) != 1 )
+    //:@I[ 0321 ]T[ 01:58:23 ]
+    #if( (a3d_dat+a3d_fun+a3d_tes+(a3d_ini|a3d_utm)) != 1 )
         #error [ONLY_ONE_FLAG_SHOULD_BE_SET:NATIWIN]
     #endif
 //:====================================:ERROR_CHECK_SELECTION://

@@ -4,8 +4,9 @@
     
 //:STANDARD_LIBS:============================================://
 
-    #include <stdio.h>  //:for: printf(...)
+    #include <stdio.h>  //: for: printf(...)
     #include <stdlib.h> //: exit()
+    #include <stdint.h> //: For: int##_t
 
 //:============================================:STANDARD_LIBS://
 //:INCLUDE_CODE_USING_MASTER_LIST:===========================://
@@ -21,6 +22,12 @@
         #include "../../DEP/PEB2020/PEB2020.H" 
                                              
     //:--------------------------------------------:3RD_PARTY://
+    //:CORE_LOOSE_LIBRARY_TYPES:-----------------------------://
+
+        #include "../../../A3D._"  //:<-[ TopMostLevel:DATA ]://
+        #include "../../../A3F._"  //:<-[ TopMostLevel:FUNC ]://
+
+    //:-----------------------------:CORE_LOOSE_LIBRARY_TYPES://
     //:INCLUDE_ALL_DATA:-------------------------------------://
 
         #define a3d_dat ( 1 ) 

@@ -4,8 +4,10 @@
 #include "../../../../LIB/E_E/MAC/CHR/TOP._"
 
 //:INIT:=====================================================://
-    void A3F_DYNALIB_INI( void ){
-        //:NO_INIT_CODE_NEEDED
+    void      A3F_DYNALIB_INI( void ){
+    A3F_LOG("[A3F_DYNALIB_INI]");
+
+        //:NOTHING_HERE_YET
     }
 //:=====================================================:INIT://
 //:LOAD_LIBRARY:=============================================://

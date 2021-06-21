@@ -1,1 +1,36 @@
-//:NATIWIN.DATA:
+//|FILESEC:NATIWIN/NW.D._|||||||||||||||||||||||||||||||||||||//
+//:TYPE_MACROS:TOP:==========================================://
+
+    #include "../../../../LIB/E_E/MAC/INT/TOP._"
+    #include "../../../../LIB/E_E/MAC/CHR/TOP._"
+    #include "../../../../LIB/E_E/MAC/A3D/TOP._"
+
+//:==========================================:TYPE_MACROS:TOP://
+//:WIN32_TYPES:==============================================://
+
+    
+
+    struct A3D_NATIWIN_wndclassexw{
+           U32       cbSize       ;
+           U32       style        ;
+           FUN*      lpfnWndProc  ;
+           I32       cbClsExtra   ;
+           I32       cbWndExtra   ;
+           VOD*      hInstance    ;
+           VOD*      hIcon        ;
+           VOD*      hCursor      ;
+           VOD*      hbrBackground;
+    CON    U16*      lpszMenuName ;
+    CON    U16*      lpszClassName;   
+           VOD*      hIconSm      ;
+    };
+
+//:==============================================:WIN32_TYPES://
+//:TYPE_MACROS:BOT:==========================================://
+
+    #include "../../../../LIB/E_E/MAC/INT/BOT._"
+    #include "../../../../LIB/E_E/MAC/CHR/BOT._"
+    #include "../../../../LIB/E_E/MAC/A3D/BOT._"
+
+//:==========================================:TYPE_MACROS:BOT://
+//|||||||||||||||||||||||||||||||||||||FILESEC:NATIWIN/NW.D._|//

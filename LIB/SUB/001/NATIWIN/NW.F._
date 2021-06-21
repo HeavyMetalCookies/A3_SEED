@@ -1,7 +1,48 @@
-//:NATIWIN.FUNC:
+//|FILESEC:NATIWIN/NW.F._|||||||||||||||||||||||||||||||||||||//
+//:TYPE_MACROS:TOP:==========================================://
 
-    void A3F_NATIWIN_INI( void ){
+    #include "../../../../LIB/E_E/MAC/INT/TOP._"
+    #include "../../../../LIB/E_E/MAC/CHR/TOP._"
+    #include "../../../../LIB/E_E/MAC/A3D/TOP._"
+    #include "../../../../LIB/E_E/MAC/A3F/TOP._"
 
-        //:NOTHINGHEREYET
+//:==========================================:TYPE_MACROS:TOP://
+//:SIZE_CHECKS:==============================================://
+
+    void A3F_NATIWIN_SIZECHK( void ){
+
+        //:declare_vars:-------------------------------------://
+
+            int siz ;
+
+        //:-------------------------------------:declare_vars://
+        //:struct_size_checks:-------------------------------://
+
+        
+            siz = sizeof( struct A3D_NATIWIN_wndclassexw );
+            A3F_ASS( siz == 80 , "[001]" );
+
+        //:-------------------------------:struct_size_checks://
 
     }
+
+//:==============================================:SIZE_CHECKS://
+//:INITIALIZER:==============================================://
+
+    void      A3F_NATIWIN_INI( void ){
+    A3F_LOG("[A3F_NATIWIN_INI]");
+
+
+        A3F_NATIWIN_SIZECHK( );
+    }
+
+//:==============================================:INITIALIZER://
+//:TYPE_MACROS:TOP:==========================================://
+
+    #include "../../../../LIB/E_E/MAC/INT/TOP._"
+    #include "../../../../LIB/E_E/MAC/CHR/TOP._"
+    #include "../../../../LIB/E_E/MAC/A3D/TOP._"
+    #include "../../../../LIB/E_E/MAC/A3F/TOP._"
+
+//:==========================================:TYPE_MACROS:TOP://
+//|||||||||||||||||||||||||||||||||||||FILESEC:NATIWIN/NW.F._|//

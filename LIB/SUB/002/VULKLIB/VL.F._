@@ -1,0 +1,8 @@
+//:VULKLIB.FUNC:
+
+    void      A3F_VULKLIB_INI( void ){
+    A3F_LOG("[A3F_VULKLIB_INI]");
+
+        //:InitCodeGoesHere
+
+    }
