@@ -1,12 +1,12 @@
 //:INCLUDE_SOURCES:==========================================://
     #if( a3d_dat == 1 )
-        #include "./001/NATIWIN/NW.D._"
+        #include "./IMP/NATIWIN/NW.D._"
     #endif
     #if( a3d_fun == 1 )
-        #include "./001/NATIWIN/NW.F._"
+        #include "./IMP/NATIWIN/NW.F._"
     #endif
     #if( a3d_tes == 1 )
-        #include "./001/NATIWIN/NW.T._"
+        #include "./IMP/NATIWIN/NW.T._"
     #endif
 //:==========================================:INCLUDE_SOURCES://
 //:INVOKE_SOURCES:===========================================://
